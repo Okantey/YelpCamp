@@ -1,0 +1,114 @@
+
+::before,::after {
+  box-sizing: border-box;
+}
+html,body {
+  background-color: whitesmoke;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-inline-start: 5%;
+  place-items: top;
+  height: 100vh;
+  /* overflow: hidden; */
+  gap: 2rem;
+
+
+}
+.logo {
+  padding-block: 1rem;
+ 
+}
+.image-bg img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  
+
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  width: 90%;
+}
+.text {
+  /* width: 55%; */
+  padding-block: 1rem;
+  color: #494949;
+ font-weight: 400;
+
+}
+p {
+  padding-block: .4rem;
+  color: #494949;
+  font-weight: 600;
+}
+p span {
+  margin-right: .5rem;
+  color: black;
+
+}
+.camp-btn button {
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: .2rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  margin-block: 1rem;
+  transition: transform .5s;
+}
+.camp-btn button:hover {
+  transform: translate(0, -5px);
+}
+.partners {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
+@media (max-width:900px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+    position: relative;
+    padding-inline-start: 0;
+    overflow: hidden;
+    
+  }
+  .yelpcamp {
+    padding-inline: 5%;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+    padding-inline-start: 5%;
+    text-align: left;
+  }
+
+  
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
