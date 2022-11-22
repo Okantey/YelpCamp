@@ -4,30 +4,99 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="/css/style.css"> -->
+  <link rel="stylesheet" href="/css/campgrounds.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap" rel="stylesheet">
   <title>Yelp Camp</title>
 </head>
 <body>
   <!-- navbar -->
-  <nav class="navber">
-    <div class="logo-img"><img src="/Assets/Logo.svg" alt="Logo"></div>
-    <div>Home</div>
-    <div>Login</div>
-    <div>
-      <button id="create-account">Create an account</button>
+  <nav class="navbar">
+    <div class="start">
+      <div class="logo-img"><img src="/Assets/Logo.svg" alt="Logo"></div>
+      <div>Home</div>
     </div>
+    <div class="end">
+      <div>Login</div>
+      <div>
+        <button id="create-account">Create an account</button>
+      </div>
+    </div>
+
   </nav>
   <!-- search camps section -->
   <div class="camps-search">
     <h2>Welcome to YelpCamp</h2>
     <p>View our hand-picked campgrounds from all over the world, or add your own.</p>
     <div class="search-container">
-      <input type="search" name="search" id="search-box" placeholder="Search for camps">
+      <span class="fa fa-search"></span><input type="search" name="search" id="search-box" placeholder="Search for camps">
       <button id="search">Search</button>
+    </div>
+    <a href="#" class="add">Or add your own campground</a>
+  </div>
+
+  <div class="camp-grid">
+    <div>
+      <div class="picture">
+        <img src="/Assets/Camp Images/High Quality Images/Mount Ulap.png" alt="">
+      </div>
+      <div class="name">Mount Ulap</div>
+      <div class="description">One of the most famous hikes in Benguet is Mt Ulap in Itogon.</div>
+      <div class="view">
+        <button>View Campground</button>
+      </div>
+    </div>
+    <div>
+      <div class="picture">
+        <img src="/Assets/Camp Images/High Quality Images/Calagus Islands.jpg" alt="">
+      </div>
+      <div class="name">Calaguas Islands</div>
+      <div class="description">A paradise of Islands that can rival the white sand beauty of Boracay.</div>
+      <div class="view">
+        <button>View Campground</button>
+      </div>
+    </div>
+    <div>
+      <div class="picture">
+        <img src="/Assets/Camp Images/High Quality Images/Onay Beach.jpg" alt="">
+      </div>
+      <div class="name">Onay Beach</div>
+      <div class="description">This is one of the best beach camping sites. beautiful and pristine.</div>
+      <div class="view">
+        <button>View Campground</button>
+      </div>
+    </div>
+    <div>
+      <div class="picture">
+        <img src="/Assets/Camp Images/High Quality Images/Seven Sisters Waterfall.jpg" alt="">
+      </div>
+      <div class="name">Seven Sisters Waterfall</div>
+      <div class="description">The Seven Sisters is the 39th tallest waterfall in Norway.</div>
+      <div class="view">
+        <button>View Campground</button>
+      </div>
+    </div>
+    <div>
+      <div class="picture">
+        <img src="/Assets/Camp Images/High Quality Images/Latik Riverside.jpg" alt="">
+      </div>
+      <div class="name">Latik Riverside</div>
+      <div class="description">Philippines is one of the most dazzling countries in all of Asia.</div>
+      <div class="view">
+        <button>View Campground</button>
+      </div>
+    </div>
+    <div>
+      <div class="picture">
+        <img src="/Assets/Camp Images/High Quality Images/Buloy Springs.jpg" alt="">
+      </div>
+      <div class="name">Buloy Springs</div>
+      <div class="description">This is one of the best beach camping sites. beautiful and pristine.</div>
+      <div class="view">
+        <button>View Campground</button>
+      </div>
     </div>
   </div>
 </body>

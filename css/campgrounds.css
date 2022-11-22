@@ -1,43 +1,34 @@
-$header-size: 3.5rem;
-$sub-header-size: 2.5rem;
-$camp-name-size: 1rem;
-$font-family: "Epilogue", -apple-system, BlinkMacSystemFont, sans-serif;
-$primary-color: #ffffff;
-$secondary-color: whitesmoke;
-$inline-padding: 5%;
-
-::before,::after {
+::before, ::after {
   box-sizing: border-box;
   margin: 0;
 }
+
 * {
-  font-family: $font-family;
+  font-family: "Epilogue", -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0;
   padding: 0;
 }
+
 body {
-  padding-inline: $inline-padding;
-  background-color: rgba(255, 255, 255, 0.1);;
+  padding-inline: 5%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-// navigation
-.navbar,.logo-img,.start {
+.navbar, .logo-img, .start {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
-  
-  
-
-
 }
+
 .navbar {
   padding-block: 1rem;
 }
+
 .start {
   gap: 1rem;
- 
 }
+
 .logo-img img {
   width: 7rem;
 }
@@ -48,20 +39,22 @@ body {
   align-items: center;
   gap: 1rem;
 }
+
 #create-account {
   background-color: #000000;
   color: white;
   font-weight: 700;
   padding-inline: 1rem;
-  padding-block: .8rem;
+  padding-block: 0.8rem;
   border: 1px solid black;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
-h2 {
-  font-size: $sub-header-size;
-  padding-block: 1rem;
 
+h2 {
+  font-size: 2.5rem;
+  padding-block: 1rem;
 }
+
 .camps-search {
   background-color: whitesmoke;
   padding-inline: 2rem;
@@ -72,89 +65,90 @@ h2 {
   -webkit-backdrop-filter: blur(5px);
 }
 
-
-// camp grid
 .camp-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: top;
   gap: 3rem;
 }
+
 .camp-grid > * {
-    /* From https://css.glass */
+  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 5px solid rgba(255, 255, 255, 0.3);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1rem;
 }
 
 .picture img {
   width: 100%;
   height: 12rem;
-  border-top-left-radius: .2rem;
-  border-top-right-radius: .2rem;
-  object-fit: cover;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
 }
+
 #search-box, #search {
-  padding-block: .7rem;
+  padding-block: 0.7rem;
   padding-inline: 2.5rem;
   margin-block: 1rem;
 }
+
 #search-box {
   outline: none;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 #search {
   background-color: #000000;
   color: white;
   font-weight: 700;
   border: 1px solid #000000;
-  border-radius: .2rem;
-  margin-left: .5rem;
+  border-radius: 0.2rem;
+  margin-left: 0.5rem;
   cursor: pointer;
 }
+
 .search-container {
   position: relative;
 }
+
 .camps-search span {
   position: absolute;
-    top: 38%;
-    left: .8rem;
-
-
+  top: 38%;
+  left: 0.8rem;
 }
+
 .camps-search a {
   color: black;
-  font-size: .9rem;
-  
+  font-size: 0.9rem;
 }
 
 .name {
-  font-size: $camp-name-size;
+  font-size: 1rem;
   font-weight: 600;
-  padding-block: .5rem;
+  padding-block: 0.5rem;
   text-align: center;
-
 }
 
 .view button {
   width: 100%;
-  padding-block: .8rem;
+  padding-block: 0.8rem;
   margin-top: 1rem;
   font-weight: 700;
   font-size: 1rem;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.67);
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
-}
-
+}/*# sourceMappingURL=campgrounds.css.map */
