@@ -119,15 +119,19 @@ h2 {
   cursor: pointer;
 }
 .search-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.searchbx {
   position: relative;
 }
-.camps-search span {
+.search-container span {
   position: absolute;
-    top: 38%;
-    left: .8rem;
-
-
+  left: 2.5rem;
 }
+
 .camps-search a {
   color: black;
   font-size: .9rem;
@@ -157,4 +161,25 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
+
+
+// setting up media queries
+@media (max-width:992px) {
+  .camp-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+// setting up media queries for mobile screen
+@media (max-width:600px) {
+  .camp-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+}
+
+
+// login page styles
 

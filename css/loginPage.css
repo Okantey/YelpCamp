@@ -1,0 +1,148 @@
+::before, ::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+}
+
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.login-area, .review-area {
+  padding-inline: 15%;
+}
+
+.login-area {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.login-txt {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  margin-block: 0.5rem;
+  width: 99.5%;
+  padding-block: 1rem;
+  border-radius: 0.2rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input::-moz-placeholder {
+  padding-left: 0.6rem;
+  font-family: "Epilogue", sans-serif;
+  font-size: 0.9rem;
+}
+
+input:-ms-input-placeholder {
+  padding-left: 0.6rem;
+  font-family: "Epilogue", sans-serif;
+  font-size: 0.9rem;
+}
+
+input::placeholder {
+  padding-left: 0.6rem;
+  font-family: "Epilogue", sans-serif;
+  font-size: 0.9rem;
+}
+
+#username, #password {
+  margin-bottom: 1rem;
+}
+
+#login-btn {
+  width: 100%;
+  padding-block: 0.8rem;
+  margin-block: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid #000;
+  border-radius: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-area p {
+  font-weight: 600;
+}
+
+.login-area a {
+  color: blue;
+  font-weight: 600;
+}
+
+.review-area {
+  background-color: whitesmoke;
+  display: grid;
+  place-items: center;
+}
+
+.review {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.container {
+  padding-inline: 15%;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 900px) {
+  body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .container {
+    padding: 0;
+  }
+  .login-area, .review-area {
+    padding-inline: 5%;
+  }
+  .login-area {
+    box-shadow: none;
+  }
+  .review-area {
+    padding-block: 2rem;
+  }
+}/*# sourceMappingURL=loginPage.css.map */

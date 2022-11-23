@@ -116,13 +116,19 @@ h2 {
 }
 
 .search-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.searchbx {
   position: relative;
 }
 
-.camps-search span {
+.search-container span {
   position: absolute;
-  top: 38%;
-  left: 0.8rem;
+  left: 2.5rem;
 }
 
 .camps-search a {
@@ -151,4 +157,15 @@ h2 {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .camp-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .camp-grid {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=campgrounds.css.map */
